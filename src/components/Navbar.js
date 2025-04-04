@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className={`flex justify-between items-center px-4 py-2 h-16 md:h-20 transition-all duration-300 ${isScrolled ? "bg-white text-black" : "bg-transparent text-white"}`}>
+      <nav className={`flex justify-between items-center px-4 py-2 h-16 md:h-20 transition-all duration-300 ${isScrolled ? "bg-white text-black" : "bg-transparent text-white hover:bg-white"}`}>
         {/* Logo */}
         <Link to="/">
           <img src={logo} alt="Intrahelp Logo" className="h-[150px] md:h-[180px] w-auto ml-[30px]" />
@@ -46,30 +46,29 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`md:flex space-x-6 ${isOpen ? "block" : "hidden"} absolute md:static bg-white md:bg-transparent w-full md:w-auto left-0 top-16 md:flex-row text-center md:text-left`}>
-          {["About", "Services", "Industries", "Portfolio", "Pricing"].map((item) => (
+          {["Home", "About", "Services", "Industries", "Portfolio", "Pricing"].map((item) => (
             <Link 
               key={item} 
-              className={`block md:inline-block px-4 py-2 font-bold transition duration-300 ${
-                isScrolled ? "text-black hover:text-blue-600" : "text-white hover:text-blue-300"
-              }`} 
-              to={`/${item.toLowerCase()}`}
+              className="block md:inline-block px-4 py-2 font-bold text-black hover:text-blue-600 transition duration-300" 
+              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
             >
               {item}
             </Link>
           ))}
         </div>
 
+
+
         {/* Right Section */}
         <div className="flex items-center">
-          <Link 
-            to="/contact" 
-            className={`px-4 py-2 rounded-md font-bold ml-[30px] transition duration-300 ${
-              isScrolled ? "bg-yellow-400 text-black hover:bg-yellow-500" : "bg-transparent border-2 border-white text-white hover:bg-white hover:text-black"
-            }`}
-          >
-            Contact Us
-          </Link>
-        </div>
+  <Link 
+    to="/contact" 
+    className="px-4 py-2 rounded-md font-bold ml-[30px] transition duration-300 bg-blue-500 border-2 border-black text-white hover:bg-blue-600"
+  >
+    Contact Us
+  </Link>
+</div>
+
       </nav>
     </header>
   );

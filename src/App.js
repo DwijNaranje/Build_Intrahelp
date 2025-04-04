@@ -5,21 +5,23 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+import Industries from "./pages/Industries";
+import Portfolio from "./pages/Portfolio";
+import Pricing from "./pages/Pricing";
 
 const App = () => {
   return (
     <Router>
-      <div className="bg-white min-h-screen">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/pricing" element={<Pricing />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 };
