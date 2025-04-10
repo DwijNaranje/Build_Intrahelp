@@ -17,7 +17,7 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="absolute top-0 left-0 w-full h-full">
+    <div className="absolute top-0 left-0 w-full h-full ">
       {images.map((image, index) => (
         <img
           key={index}
