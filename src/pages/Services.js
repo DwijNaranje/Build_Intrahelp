@@ -1,7 +1,8 @@
 import React from "react";
-import heroBg from "../assets/image2.png"; // Background for hero
-import webImg from "../assets/web.svg";   // New web app SVG
-import mobileImg from "../assets/mob.svg"; // New mobile app SVG
+import heroBg from "../assets/image2.png";
+import webImg from "../assets/web.svg";
+import mobileImg from "../assets/mob.svg";
+import diagram from "../assets/Diagram.svg"; // 👈 Imported new diagram image
 
 const Services = () => {
   return (
@@ -37,7 +38,7 @@ const Services = () => {
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {/* Web Applications Card */}
           <div className="bg-white rounded-lg shadow p-8 flex flex-col items-center text-center">
-            <img src={webImg} alt="Web Applications" className="w-[240px] mb-6" />
+            <img src={webImg} alt="Web Applications" className="w-[280px] mb-6" />
             <h3 className="text-xl font-bold text-blue-900 mb-4">Web applications</h3>
             <p className="text-gray-700">
               Development of custom software for web-environment. We are ready to develop a reliable custom software solution that will not only bring the idea to life or increase the innovativeness of the business, but also improve your internal processes.
@@ -52,6 +53,14 @@ const Services = () => {
               Development of custom software for mobile devices and adaptive mobile applications with the ability to integrate into the cloud and local storage for offline use. As a result, you get a custom mobile application for the most popular operating systems with a user-friendly interface.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* === Solution Development Cycle Section === */}
+      <div className="py-20 px-6 bg-white text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-24">Solution development cycle</h2>
+        <div className="flex justify-center">
+          <img src={diagram} alt="Solution Development Cycle Diagram" className="w-full max-w-4xl" />
         </div>
       </div>
 

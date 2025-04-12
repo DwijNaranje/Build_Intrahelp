@@ -3,7 +3,6 @@ import HeroSlider from "../components/HeroSlider";
 import bgImage from "../assets/image.png"; // Background image import
 import ExploreOurOffering from "./ExploreOurOffering";
 import Consultation from "./Consultation";
-import assets from "../assets/Hello_Image.svg"; 
 
 import { FaChartLine, FaGlobe, FaAward, FaTrophy } from "react-icons/fa"; // Icons for "Why Choose Us"
 import { FaDollarSign, FaShoppingCart, FaHeartbeat, FaCar, FaBullhorn, FaDumbbell, FaGraduationCap, FaFilm, FaBalanceScale, FaTruck, FaLightbulb, FaLeaf } from "react-icons/fa"; // Industry Icons
