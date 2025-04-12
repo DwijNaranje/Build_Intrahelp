@@ -75,6 +75,27 @@ const Home = () => (
 
     <ExploreOurOffering />
 
+    {/* Buttons Section */}
+<div className="w-full py-10 bg-white flex flex-col items-center">
+  {/* Larger Centered "Hire Us" Button */}
+  <button className="px-16 py-3 text-xl bg-red-600 text-white font-bold rounded-md hover:bg-red-700 transition mb-12">
+    Hire us
+  </button>
+
+  {/* Other Buttons in a Single Line */}
+  <div className="flex flex-wrap justify-center gap-6">
+    {["Solution development", "Offshore Development Center", "PoC for Startups", "Case studies"].map((item) => (
+      <button
+        key={item}
+        className="px-6 py-3 bg-blue-100 text-blue-600 font-semibold text-lg rounded-md hover:bg-blue-200 transition flex items-center"
+      >
+        {item} →
+      </button>
+    ))}
+  </div>
+</div>
+
+
 
     {/* Industries Section (Updated) */}
 <div className="w-full py-24 bg-gray-100 text-center">

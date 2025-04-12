@@ -36,7 +36,7 @@ const Navbar = () => {
       <nav className={`flex justify-between items-center px-4 py-2 h-16 md:h-20 transition-all duration-300 ${isScrolled ? "bg-white text-black" : "bg-transparent text-white hover:bg-white"}`}>
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="Intrahelp Logo" className="h-[150px] md:h-[180px] w-auto ml-[30px]" />
+          <img src={logo} alt="Intrahelp Logo" className="h-[150px] md:h-[180px] w-auto " />
         </Link>
 
         {/* Mobile Menu Button */}

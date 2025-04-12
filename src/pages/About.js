@@ -12,6 +12,51 @@ const About = () => {
       {/* Our Values Section */}
       <ValuesSection />
 
+
+      {/* Solutions We Cover Section */}
+      <section className="bg-white px-6 md:px-20 py-20">
+        <h2 className="text-4xl font-bold text-blue-900 mb-4 relative inline-block">
+          <span className="bg-blue-100 absolute inset-0 w-10 h-10 -left-4 -top-2 rounded-sm z-[-1]"></span>
+          Solutions We Cover
+        </h2>
+        <p className="text-gray-700 mb-12 text-lg max-w-3xl">
+          With over 35 years in Information Technology, we have built up expertise in dozens of domains, including:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {[
+            "Enterprise applications", "ERP", "CRM", "Operations management",
+            "Corporate finance", "Payments", "Asset management", "Document management",
+            "Intranets", "HR management", "eLearning", "eCommerce",
+            "Supply chain management", "Fleet management", "Data analytics", "Web portals"
+          ].map((item, index) => (
+            <div key={index} className="border p-6 shadow-sm hover:shadow-md transition rounded-md flex justify-between items-center text-lg font-medium">
+              {item}
+              <span className="text-blue-600 ml-2">↘</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Buttons Section */}
+      <div className="w-full py-10 bg-white flex flex-col items-center">
+        {/* Larger Centered "Hire Us" Button */}
+        <button className="px-16 py-3 text-xl bg-red-600 text-white font-bold rounded-md hover:bg-red-700 transition mb-12">
+          Hire us
+        </button>
+
+        {/* Other Buttons in a Single Line */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {["Solution development", "Offshore Development Center", "PoC for Startups", "Case studies"].map((item) => (
+            <button
+              key={item}
+              className="px-6 py-3 bg-blue-100 text-blue-600 font-semibold text-lg rounded-md hover:bg-blue-200 transition flex items-center"
+            >
+              {item} →
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Intrahelp in Numbers Section */}
       <NumbersSection />
 
@@ -54,7 +99,7 @@ const ValuesSection = () => {
   ];
 
   return (
-    <div className="py-16 px-6 text-center">
+    <div className="py-24 px-6 text-center">
       <h2 className="text-4xl font-bold mb-10">Our Values</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {values.map((value, index) => (
@@ -71,7 +116,7 @@ const ValuesSection = () => {
 
 const NumbersSection = () => {
   return (
-    <div className="relative w-full py-32 text-white">
+    <div className="relative w-full py-48 text-white">
       {/* Background Image with slight blur effect */}
       <div className="absolute inset-0 bg-cover bg-center filter blur-lg" style={{ backgroundImage: `url(${bgImage})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
