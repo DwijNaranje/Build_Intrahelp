@@ -73,7 +73,7 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${require('../assets/image2.png')})` }}
     >
       {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black opacity-40"></div>
+      <div className="absolute inset-0 bg-black opacity-30"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-2xl text-white px-6">
