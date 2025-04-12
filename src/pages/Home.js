@@ -11,14 +11,14 @@ import { FaDollarSign, FaShoppingCart, FaHeartbeat, FaCar, FaBullhorn, FaDumbbel
 const Home = () => (
   <div className="w-full">
     {/* Hero Section */}
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen ">
       <HeroSlider />
       <div className="absolute top-[60%] left-[10%] text-white">
         <h1 className="text-3xl md:text-5xl font-bold">Software Consulting and Development</h1>
         <p className="text-xl md:text-2xl mt-2">
-          For <span className="text-green-500 font-bold">Business Growth</span>
+          For <span className="text-blue-500 font-bold">Business Growth</span>
         </p>
-        <button className="mt-4 px-6 py-3 bg-green-500 text-white font-semibold text-lg rounded-lg hover:bg-green-600 transition">
+        <button className="mt-4 px-6 py-3 bg-blue-500 text-white font-semibold text-lg rounded-lg hover:bg-green-600 transition">
           Get Started
         </button>
       </div>

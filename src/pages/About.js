@@ -20,7 +20,7 @@ const About = () => {
           Solutions We Cover
         </h2>
         <p className="text-gray-700 mb-12 text-lg max-w-3xl">
-          With over 35 years in Information Technology, we have built up expertise in dozens of domains, including:
+          With over 4 years in Information Technology, we have built up expertise in dozens of domains, including:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {[
@@ -73,7 +73,7 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${require('../assets/image2.png')})` }}
     >
       {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black opacity-20"></div>
+      <div className="absolute inset-0 bg-black opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-2xl text-white px-6">
