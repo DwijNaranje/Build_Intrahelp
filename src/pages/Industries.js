@@ -1,5 +1,6 @@
 import React from "react";
 import heroBg from "../assets/image2.png"; // 👈 Ensure the path is correct
+import Consultation from "./Consultation"; // Import Consultation Component
 
 const Industries = () => {
   const industries = [
@@ -51,6 +52,10 @@ const Industries = () => {
           ))}
         </div>
       </div>
+
+      <Consultation />
+
+
     </div>
   );
 };
