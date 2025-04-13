@@ -1,34 +1,56 @@
 import React from "react";
 
-
 const Consultation = () => {
   return (
-    <div className="w-full bg-blue-100 py-16 flex justify-center">
-      <div className="bg-white p-10 shadow-lg rounded-lg w-[80%] flex">
+    <div className="w-full bg-blue-100 py-16 flex justify-center px-4">
+      <div className="bg-white p-6 md:p-10 shadow-lg rounded-lg w-full max-w-6xl flex flex-col md:flex-row">
         {/* Left Side - Form */}
-        <div className="w-2/3 pr-10">
-          <h2 className="text-3xl font-bold text-gray-900">Need a Consultation?</h2>
-          <p className="text-gray-600 mt-2">Drop us a line! We are here to answer your questions 24/7.</p>
+        <div className="md:w-2/3 w-full md:pr-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+            Need a Consultation?
+          </h2>
+          <p className="text-gray-600 mt-2">
+            Drop us a line! We are here to answer your questions 24/7.
+          </p>
 
-          <textarea 
-            className="w-full border p-3 mt-4 rounded-lg focus:outline-none" 
-            rows="3" 
+          <textarea
+            className="w-full border p-3 mt-4 rounded-lg focus:outline-none"
+            rows="3"
             placeholder="How can we help you?"
           ></textarea>
 
           <div className="text-sm text-blue-600 mt-2">
-            <span className="cursor-pointer">📎 Drag and drop</span> or <span className="underline cursor-pointer">browse</span> to upload your file(s)
+            <span className="cursor-pointer">📎 Drag and drop</span> or{" "}
+            <span className="underline cursor-pointer">browse</span> to upload
+            your file(s)
           </div>
 
-          <div className="grid grid-cols-2 gap-4 mt-4">
-            <input type="text" placeholder="Full name" className="border p-3 rounded-lg w-full focus:outline-none" />
-            <input type="text" placeholder="Company" className="border p-3 rounded-lg w-full focus:outline-none" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <input
+              type="text"
+              placeholder="Full name"
+              className="border p-3 rounded-lg w-full focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Company"
+              className="border p-3 rounded-lg w-full focus:outline-none"
+            />
           </div>
 
-          <div className="grid grid-cols-2 gap-4 mt-4">
-            <input type="email" placeholder="Work email" className="border p-3 rounded-lg w-full focus:outline-none" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <input
+              type="email"
+              placeholder="Work email"
+              className="border p-3 rounded-lg w-full focus:outline-none"
+            />
             <div className="flex border rounded-lg p-3 items-center">
-              <span className="mr-2">🇮🇳</span> <input type="text" placeholder="+91 00000 00000" className="focus:outline-none w-full" />
+              <span className="mr-2">🇮🇳</span>
+              <input
+                type="text"
+                placeholder="+91 00000 00000"
+                className="focus:outline-none w-full"
+              />
             </div>
           </div>
 
@@ -38,8 +60,10 @@ const Consultation = () => {
         </div>
 
         {/* Right Side - Contact Options */}
-        <div className="w-1/3 border-l pl-10">
-          <h3 className="text-lg font-semibold text-gray-900">Get in touch instantly</h3>
+        <div className="md:w-1/3 w-full mt-10 md:mt-0 border-t md:border-t-0 md:border-l md:pl-10 pt-6 md:pt-0">
+          <h3 className="text-lg font-semibold text-gray-900">
+            Get in touch instantly
+          </h3>
           <div className="mt-2 space-y-2 text-blue-600">
             <p className="cursor-pointer">📞 Call us</p>
             <p className="cursor-pointer">📧 Email us</p>
@@ -47,16 +71,19 @@ const Consultation = () => {
             <p className="cursor-pointer">📡 Live chat</p>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6">For journalists</h3>
-          <p className="text-blue-600 cursor-pointer mt-2">📰 Get unique insights</p>
+          <h3 className="text-lg font-semibold text-gray-900 mt-6">
+            For journalists
+          </h3>
+          <p className="text-blue-600 cursor-pointer mt-2">
+            📰 Get unique insights
+          </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6">Join our team</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mt-6">
+            Join our team
+          </h3>
           <p className="text-blue-600 cursor-pointer mt-2">📂 Upload your CV</p>
 
-          {/* Illustration */}
-          <div className="mt-8 flex justify-end">
-          <img src="/assets/Hello_Image.svg" alt="Illustration" className="w-32" />
-          </div>
+          
         </div>
       </div>
     </div>

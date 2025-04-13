@@ -23,27 +23,27 @@ const Home = () => (
       </div>
     </div>
 
-    {/* Why Choose Us Section */}
-    <div className="w-full py-48 bg-gray-50 text-center">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-black">Why choose us?</h2>
-        <p className="text-xl text-blue-600 mb-32">Advantages</p>
+    {/* === Why Choose Us Section === */}
+<div className="w-full py-24 bg-gray-50 text-center px-4">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl md:text-5xl font-bold text-black">Why choose us?</h2>
+    <p className="text-lg md:text-xl text-blue-600 mb-12">Advantages</p>
 
-        <div className="mt-20 flex justify-between items-center w-full max-w-6xl mx-auto">
-          {[
-            { icon: <FaChartLine className="text-blue-600 text-6xl" />, text: "Business approach to development" },
-            { icon: <FaGlobe className="text-blue-600 text-6xl" />, text: "Advanced 16 years Fintech Expertise" },
-            { icon: <FaAward className="text-blue-600 text-6xl" />, text: <>Lifetime Code <br /> Warranty</> },
-            { icon: <FaTrophy className="text-blue-600 text-6xl" />, text: "Enhanced business value of products" },
-          ].map((item, index) => (
-            <div key={index} className="flex flex-col items-center w-1/4 text-center px-4">
-              {item.icon}
-              <p className="text-lg font-semibold mt-4">{item.text}</p>
-            </div>
-          ))}
+    <div className="mt-10 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-4">
+      {[
+        { icon: <FaChartLine className="text-blue-600 text-5xl md:text-6xl" />, text: "Business approach to development" },
+        { icon: <FaGlobe className="text-blue-600 text-5xl md:text-6xl" />, text: "Advanced 16 years Fintech Expertise" },
+        { icon: <FaAward className="text-blue-600 text-5xl md:text-6xl" />, text: <>Lifetime Code <br /> Warranty</> },
+        { icon: <FaTrophy className="text-blue-600 text-5xl md:text-6xl" />, text: "Enhanced business value of products" },
+      ].map((item, index) => (
+        <div key={index} className="w-full md:w-1/4 flex flex-col items-center text-center px-4">
+          {item.icon}
+          <p className="text-base md:text-lg font-semibold mt-4">{item.text}</p>
         </div>
-      </div>
+      ))}
     </div>
+  </div>
+</div>
 
     {/* "Intrahelp in Numbers" Section */}
     <div className="relative w-full py-48 text-white">

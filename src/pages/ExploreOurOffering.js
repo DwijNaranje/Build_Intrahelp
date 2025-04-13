@@ -64,17 +64,20 @@ const ExploreOurOffering = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full py-24 bg-white text-center">
-      <h2 className="text-5xl font-bold text-black">Explore Our Offering</h2>
-      <div className="max-w-7xl mx-auto mt-10 flex">
+    <div className="w-full py-16 px-4 bg-white text-center">
+      <h2 className="text-3xl md:text-5xl font-bold text-black mb-8">Explore Our Offering</h2>
+
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6">
         {/* Left side navigation */}
-        <div className="w-1/4 bg-blue-100 p-6">
+        <div className="md:w-1/4 w-full bg-blue-100 p-4 rounded-lg shadow-sm">
           {offerings.map((item, index) => (
             <div
               key={index}
-              className={`p-3 font-semibold cursor-pointer transition ${
-    index === activeIndex ? "bg-blue-600 text-white" : "text-blue-600 hover:bg-blue-200"
-  }`}
+              className={`p-3 font-semibold cursor-pointer rounded transition ${
+                index === activeIndex
+                  ? "bg-blue-600 text-white"
+                  : "text-blue-600 hover:bg-blue-200"
+              }`}
               onClick={() => setActiveIndex(index)}
             >
               {item.title}
@@ -83,15 +86,28 @@ const ExploreOurOffering = () => {
         </div>
 
         {/* Right side content */}
-        <div className="w-3/4 p-6 text-left">
-          <h3 className="text-2xl font-bold">{offerings[activeIndex].title}</h3>
+        <div className="md:w-3/4 w-full p-4 text-left bg-gray-50 rounded-lg shadow-sm">
+          <h3 className="text-2xl font-bold text-gray-800">{offerings[activeIndex].title}</h3>
           <p className="mt-4 text-gray-700">{offerings[activeIndex].description}</p>
-          <div className="mt-4 grid grid-cols-2 gap-4 text-blue-600">
+
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-blue-600">
             {offerings[activeIndex].links.map((link, index) => (
-              <a key={index} href="#" className="hover:underline">▪ {link}</a>
+              <button
+                key={index}
+                onClick={() => console.log(`${link} clicked`)}
+                className="text-left hover:underline"
+              >
+                ▪ {link}
+              </button>
             ))}
           </div>
-          <a href="#" className="text-blue-600 font-semibold mt-4 inline-block hover:underline">Check details →</a>
+
+          <button
+            onClick={() => console.log("Check details clicked")}
+            className="text-blue-600 font-semibold mt-6 inline-block hover:underline"
+          >
+            Check details →
+          </button>
         </div>
       </div>
     </div>
