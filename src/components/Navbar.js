@@ -60,10 +60,10 @@ const Navbar = () => {
 
 
         {/* Right Section */}
-        <div className="flex items-center">
+<div className="flex items-center">
   <Link 
     to="/contact" 
-    className="px-4 py-2 rounded-md font-bold ml-[30px] transition duration-300 bg-blue-500 border-2 border-black text-white hover:bg-blue-600"
+    className="px-4 py-2 font-bold ml-[30px] transition duration-300 bg-yellow-400 border-2 border-black text-black hover:bg-yellow-500 rounded-none"
   >
     Contact Us
   </Link>
