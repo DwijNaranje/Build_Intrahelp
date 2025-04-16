@@ -1,62 +1,116 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 const Consultation = () => {
+  const [formData, setFormData] = useState({
+    message: "",
+    name: "",
+    company: "",
+    email: "",
+    phone: ""
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:5000/api/consultation", formData);
+      setSubmitted(true);
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <div className="w-full bg-blue-100 py-16 flex justify-center px-4">
       <div className="bg-white p-6 md:p-10 shadow-lg rounded-lg w-full max-w-6xl flex flex-col md:flex-row">
         {/* Left Side - Form */}
         <div className="md:w-2/3 w-full md:pr-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Need a Consultation?
-          </h2>
-          <p className="text-gray-600 mt-2">
-            Drop us a line! We are here to answer your questions 24/7.
-          </p>
-
-          <textarea
-            className="w-full border p-3 mt-4 rounded-lg focus:outline-none"
-            rows="3"
-            placeholder="How can we help you?"
-          ></textarea>
-
-          <div className="text-sm text-blue-600 mt-2">
-            <span className="cursor-pointer">📎 Drag and drop</span> or{" "}
-            <span className="underline cursor-pointer">browse</span> to upload
-            your file(s)
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <input
-              type="text"
-              placeholder="Full name"
-              className="border p-3 rounded-lg w-full focus:outline-none"
-            />
-            <input
-              type="text"
-              placeholder="Company"
-              className="border p-3 rounded-lg w-full focus:outline-none"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <input
-              type="email"
-              placeholder="Work email"
-              className="border p-3 rounded-lg w-full focus:outline-none"
-            />
-            <div className="flex border rounded-lg p-3 items-center">
-              <span className="mr-2">🇮🇳</span>
-              <input
-                type="text"
-                placeholder="+91 00000 00000"
-                className="focus:outline-none w-full"
-              />
+          {submitted ? (
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-green-600">
+                Thank you for reaching out!
+              </h2>
+              <p className="text-gray-600 mt-2">
+                We’ll get back to you shortly.
+              </p>
             </div>
-          </div>
+          ) : (
+            <form onSubmit={handleSubmit}>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                Need a Consultation?
+              </h2>
+              <p className="text-gray-600 mt-2">
+                Drop us a line! We are here to answer your questions 24/7.
+              </p>
 
-          <button className="bg-yellow-400 text-black font-bold px-6 py-3 rounded-lg mt-4 hover:bg-yellow-500 w-full">
-            Send
-          </button>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full border p-3 mt-4 rounded-lg focus:outline-none"
+                rows="3"
+                placeholder="How can we help you?"
+              ></textarea>
+
+              <div className="text-sm text-blue-600 mt-2">
+                <span className="cursor-pointer">📎 Drag and drop</span> or{" "}
+                <span className="underline cursor-pointer">browse</span> to
+                upload your file(s)
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Full name"
+                  className="border p-3 rounded-lg w-full focus:outline-none"
+                />
+                <input
+                  type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Company"
+                  className="border p-3 rounded-lg w-full focus:outline-none"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Work email"
+                  className="border p-3 rounded-lg w-full focus:outline-none"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="+91 00000 00000"
+                  className="border p-3 rounded-lg w-full focus:outline-none"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="bg-yellow-400 text-black font-bold px-6 py-3 rounded-lg mt-4 hover:bg-yellow-500 w-full"
+              >
+                Send
+              </button>
+            </form>
+          )}
         </div>
 
         {/* Right Side - Contact Options */}
@@ -82,8 +136,6 @@ const Consultation = () => {
             Join our team
           </h3>
           <p className="text-blue-600 cursor-pointer mt-2">📂 Upload your CV</p>
-
-          
         </div>
       </div>
     </div>

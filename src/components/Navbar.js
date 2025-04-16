@@ -28,7 +28,7 @@ const Navbar = () => {
           <span className="flex items-center">
             <Mail size={16} className="mr-2" /> contact@intrahelp.com
           </span>
-          <span>📞 +1 234 567 8900</span>
+          <span>📞 +91 98813 69017</span>
         </div>
       </div>
 
