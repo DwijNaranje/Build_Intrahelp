@@ -7,39 +7,46 @@ import project4 from "../assets/image2.png";
 import project5 from "../assets/image2.png";
 import project6 from "../assets/image2.png";
 
-// Example project data
+// Updated project data with URLs
 const projectData = [
   {
     title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
     image: project1,
     industry: "Healthcare",
+    url: "https://example.com/project1",
   },
   {
     title: "IoT-Based Physiotherapy Platform Driving 70% Reduction in Pain",
     image: project2,
     industry: "Healthcare",
+    url: "https://example.com/project2",
   },
   {
     title: "Underwriting Automation Software for a Global Aviation Insurer with $30B in Assets",
     image: project3,
     industry: "Finance",
+    url: "https://example.com/project3",
   },
   {
     title: "10-Year Evolution of Life Sciences Software Products Used by GSK and AstraZeneca",
     image: project4,
     industry: "Pharmaceuticals",
+    url: "https://example.com/project4",
   },
   {
     title: "Custom Software for End-to-End Loan Management Automation",
     image: project5,
     industry: "Finance",
+    url: "https://example.com/project5",
   },
   {
     title: "Azure-Based Investment Management Software for a Full-Service Family Office",
     image: project6,
     industry: "Finance",
+    url: "https://example.com/project6",
   },
 ];
+
 
 const industries = ["All", "Healthcare", "Finance", "Pharmaceuticals"];
 
@@ -64,9 +71,7 @@ const Portfolio = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
             Projects We Completed
           </h1>
-          <p className="text-lg md:text-xl mb-10">
-            We offer full-cycle IT consulting and software engineering to help BFSI companies transform operations and unlock growth opportunities.
-          </p>
+          
           <button className="bg-red-600 hover:bg-red-700 transition px-6 py-3 text-lg font-semibold rounded">
             Get a free consultation
           </button>
@@ -110,9 +115,15 @@ const Portfolio = () => {
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold mb-4">{project.title}</h3>
-                <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition text-sm">
-                  Read More →
-                </button>
+                <a
+  href={project.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition text-sm"
+>
+  View site →
+</a>
+
               </div>
             </div>
           ))}
