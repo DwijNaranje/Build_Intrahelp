@@ -9,11 +9,9 @@ const Footer = () => {
         {/* Logo and Social Profiles */}
         <div>
           <img src={logo} alt="Intrahelp Logo" className="h-[150px] md:h-[180px]" />
-          <p className="text-gray-400">Our profiles at:</p>
+          <p className="text-gray-400">Our profile at:</p>
           <div className="mt-4 space-y-2">
-            <a href="#" className="block text-lg font-semibold">Clutch</a>
             <a href="#" className="block text-lg font-semibold">LinkedIn</a>
-            <a href="#" className="block text-lg font-semibold">Top Software Companies</a>
           </div>
         </div>
 

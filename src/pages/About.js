@@ -132,8 +132,8 @@ const NumbersSection = () => {
         <div className="flex flex-wrap justify-center gap-16">
           {[
             { value: "100%", text: "Delivered on time", icon: "⏳" },
-            { value: "400+", text: "Projects", icon: "📊" },
-            { value: "50+", text: "Developers", icon: "👨‍💻" },
+            { value: "50+", text: "Projects", icon: "📊" },
+            { value: "10+", text: "Developers", icon: "👨‍💻" },
           ].map((stat, index) => (
             <div key={index} className="flex flex-col items-center space-y-4">
               <span className="text-7xl">{stat.icon}</span>

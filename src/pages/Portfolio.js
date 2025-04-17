@@ -71,7 +71,9 @@ const Portfolio = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
             Projects We Completed
           </h1>
-          
+          <p className="text-lg md:text-xl mb-10">
+            We offer full-cycle IT consulting and software engineering to help BFSI companies transform operations and unlock growth opportunities.
+          </p>
           <button className="bg-red-600 hover:bg-red-700 transition px-6 py-3 text-lg font-semibold rounded">
             Get a free consultation
           </button>
