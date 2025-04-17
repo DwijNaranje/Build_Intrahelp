@@ -59,8 +59,8 @@ const Home = () => (
         <div className="flex flex-wrap justify-center gap-40">
           {[
             { value: "100%", text: "Delivered on time", icon: "⏳" },
-            { value: "400+", text: "Projects", icon: "📊" },
-            { value: "50+", text: "Developers", icon: "👨‍💻" },
+            { value: "50+", text: "Projects", icon: "📊" },
+            { value: "10+", text: "Developers", icon: "👨‍💻" },
           ].map((stat, index) => (
             <div key={index} className="flex flex-col items-center space-y-8">
               <span className="text-8xl">{stat.icon}</span>

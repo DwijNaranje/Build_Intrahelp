@@ -46,7 +46,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`md:flex space-x-6 ${isOpen ? "block" : "hidden"} absolute md:static bg-white md:bg-transparent w-full md:w-auto left-0 top-16 md:flex-row text-center md:text-left`}>
-          {["Home", "About", "Services", "Industries", "Portfolio", "Pricing"].map((item) => (
+          {["Home", "About", "Services", "Industries", "Portfolio", "Pricing", "Career"].map((item) => (
             <Link 
               key={item} 
               className="block md:inline-block px-4 py-2 font-bold text-black hover:text-blue-600 transition duration-300" 

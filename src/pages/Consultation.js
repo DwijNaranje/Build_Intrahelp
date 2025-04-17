@@ -59,11 +59,7 @@ const Consultation = () => {
                 placeholder="How can we help you?"
               ></textarea>
 
-              <div className="text-sm text-blue-600 mt-2">
-                <span className="cursor-pointer">📎 Drag and drop</span> or{" "}
-                <span className="underline cursor-pointer">browse</span> to
-                upload your file(s)
-              </div>
+              
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <input
@@ -125,12 +121,6 @@ const Consultation = () => {
             <p className="cursor-pointer">📡 Live chat</p>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6">
-            For journalists
-          </h3>
-          <p className="text-blue-600 cursor-pointer mt-2">
-            📰 Get unique insights
-          </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mt-6">
             Join our team

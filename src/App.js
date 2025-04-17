@@ -9,7 +9,9 @@ import Services from "./pages/Services";
 import Industries from "./pages/Industries";
 import Portfolio from "./pages/Portfolio";
 import Pricing from "./pages/Pricing";
+import Career from "./pages/Career";
 import Contact from "./pages/Contact";
+import JobApplication from "./pages/JobApplication";
 
 const App = () => {
   return (
@@ -24,7 +26,9 @@ const App = () => {
           <Route path="/industries" element={<Industries />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/jobapplication/:id" element={<JobApplication />} />
         </Routes>
       </main>
       <Footer />
