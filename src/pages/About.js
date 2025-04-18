@@ -1,17 +1,19 @@
 import React from "react";
 import bgImage from "../assets/image.png"; // Background image import
 import Consultation from "./Consultation"; // Import Consultation Component
+import { useNavigate } from "react-router-dom"; // ✅ import useNavigate
 import { FaCogs, FaBullseye, FaArrowsAlt, FaHandsHelping, FaUsers } from "react-icons/fa";
 
 const About = () => {
+  const navigate = useNavigate(); // ✅ use inside component
+
   return (
     <>
       {/* Hero Section */}
-      <HeroSection />
+      <HeroSection navigate={navigate} />
 
       {/* Our Values Section */}
       <ValuesSection />
-
 
       {/* Solutions We Cover Section */}
       <section className="bg-white px-6 md:px-20 py-20">
@@ -29,7 +31,7 @@ const About = () => {
             "Intranets", "HR management", "eLearning", "eCommerce",
             "Supply chain management", "Fleet management", "Data analytics", "Web portals"
           ].map((item, index) => (
-            <div key={index} className="border p-6 shadow-sm hover:shadow-md transition rounded-md flex justify-between items-center text-lg font-medium">
+            <div onClick={() => navigate("/portfolio")} key={index} className="border p-6 shadow-sm hover:shadow-md transition rounded-md flex justify-between items-center text-lg font-medium">
               {item}
               <span className="text-blue-600 ml-2">↘</span>
             </div>
@@ -39,16 +41,20 @@ const About = () => {
 
       {/* Buttons Section */}
       <div className="w-full py-10 bg-white flex flex-col items-center">
-        {/* Larger Centered "Hire Us" Button */}
-        <button className="px-16 py-3 text-xl bg-red-600 text-white font-bold rounded-md hover:bg-red-700 transition mb-12">
+        {/* "Hire Us" Button with Navigation */}
+        <button
+          onClick={() => navigate("/contact")} // ✅ navigate on click
+          className="px-16 py-3 text-xl bg-red-600 text-white font-bold rounded-md hover:bg-red-700 transition mb-12"
+        >
           Hire us
         </button>
 
-        {/* Other Buttons in a Single Line */}
+        {/* Other Buttons */}
         <div className="flex flex-wrap justify-center gap-6">
           {["Solution development", "Offshore Development Center", "PoC for Startups", "Case studies"].map((item) => (
             <button
               key={item}
+              onClick={() => navigate("/portfolio")}
               className="px-6 py-3 bg-blue-100 text-blue-600 font-semibold text-lg rounded-md hover:bg-blue-200 transition flex items-center"
             >
               {item} →
@@ -66,22 +72,25 @@ const About = () => {
   );
 };
 
-const HeroSection = () => {
+// ✅ Pass navigate prop to use inside HeroSection
+const HeroSection = ({ navigate }) => {
   return (
-    <div 
-      className="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center" 
+    <div
+      className="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center"
       style={{ backgroundImage: `url(${require('../assets/image2.png')})` }}
     >
-      {/* Overlay for better text visibility */}
       <div className="absolute inset-0 bg-black opacity-30"></div>
 
-      {/* Content */}
       <div className="relative z-10 max-w-2xl text-white px-6">
         <h2 className="text-5xl font-bold">About Intrahelp</h2>
         <p className="mt-4 text-lg">
           We are a virtual assistant company providing business owners with expert support in IT, administration, and project management.
         </p>
-        <button className="mt-6 bg-red-600 text-white py-3 px-6 text-lg font-semibold rounded hover:bg-red-700 transition">
+        {/* ✅ Navigate on click */}
+        <button
+          onClick={() => navigate("/contact")}
+          className="mt-6 bg-red-600 text-white py-3 px-6 text-lg font-semibold rounded hover:bg-red-700 transition"
+        >
           Let’s discuss your project
         </button>
       </div>
@@ -117,18 +126,15 @@ const ValuesSection = () => {
 const NumbersSection = () => {
   return (
     <div className="relative w-full py-48 text-white">
-      {/* Background Image with slight blur effect */}
       <div className="absolute inset-0 bg-cover bg-center filter blur-lg" style={{ backgroundImage: `url(${bgImage})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-8">
         <h2 className="text-4xl md:text-5xl font-bold mb-20">
           <span className="text-blue-600">INTRAHELP</span> in Numbers
         </h2>
 
-        {/* Stats */}
         <div className="flex flex-wrap justify-center gap-16">
           {[
             { value: "100%", text: "Delivered on time", icon: "⏳" },

@@ -17,40 +17,36 @@ const Footer = () => {
 
         {/* Office Locations */}
         <div>
-          <h3 className="font-bold text-lg">London, UK</h3>
+          <h3 className="font-bold text-lg">Maharashtra, India</h3>
           <p className="text-gray-400 text-sm">
-            59 St. Martin’s Lane, Suite 8, London, WC2N 4JS
-            <br /> +44 7392 032352
-            <br /> lon@intrahelp.com
+            Nagpur, Maharashtra, India
+            <br /> +91 98813 69017
+            <br /> ngp@intrahelp.com
           </p>
-          <h3 className="font-bold text-lg mt-4">Riga, Latvia</h3>
+          <h3 className="font-bold text-lg mt-4">Maharashtra, India</h3>
           <p className="text-gray-400 text-sm">
-            Plienciema Street 16, Marupe
-            <br /> +371 220 669 45
-            <br /> info@intrahelp.com
+          Pune, Maharashtra, India
+            <br /> +91 94035 47883
+            <br /> pune@intrahelp.com
           </p>
         </div>
 
         {/* More Office Locations */}
         <div>
-          <h3 className="font-bold text-lg">USA, NY</h3>
+        <h3 className="font-bold text-lg">Telangana, India</h3>
           <p className="text-gray-400 text-sm">
-            Sales Department
-            <br /> usa@intrahelp.com
+            Hyderabad, Maharashtra, India
+            <br /> +91 98813 69017
+            <br /> Hyderabad@intrahelp.com
           </p>
-          <h3 className="font-bold text-lg mt-4">Khmelnytskyi, Ukraine</h3>
-          <p className="text-gray-400 text-sm">
-            Stepana Bandery Street, 1/1, BC PARUS, office 402
-            <br /> +38 098 095 22 64
-            <br /> hmj@intrahelp.com
-          </p>
+          
         </div>
 
         {/* Quick Links */}
         <div>
           <h3 className="font-bold text-lg">Quick Links</h3>
           <ul className="mt-4 space-y-2">
-            {["Home", "About", "Services", "Industries", "Portfolio", "Pricing", "Career"].map((link) => (
+            {[ "About", "Services", "Industries", "Portfolio", "Pricing", "Career"].map((link) => (
               <li key={link}>
                 <Link to={`/${link.toLowerCase().replace(/\s+/g, "-")}`} className="text-gray-400 hover:text-white transition duration-300">
                   {link}

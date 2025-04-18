@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import heroBg from "../assets/image2.png";
 import project1 from "../assets/image2.png";
 import project2 from "../assets/image2.png";
@@ -6,6 +7,7 @@ import project3 from "../assets/image2.png";
 import project4 from "../assets/image2.png";
 import project5 from "../assets/image2.png";
 import project6 from "../assets/image2.png";
+import Consultation from "./Consultation";
 
 // Updated project data with URLs
 const projectData = [
@@ -47,11 +49,15 @@ const projectData = [
   },
 ];
 
-
-const industries = ["All", "Healthcare", "Finance", "Pharmaceuticals"];
+const industries = [
+  "All", "Healthcare", "Finance", "Pharmaceuticals", "Banking", "Insurance", "Lending", "Investment",
+  "FinTech", "Payments", "Retail", "Manufacturing", "Transportation and Logistics", "Oil and Gas",
+  "Professional Services", "Telecommunications", "Real Estate", "Construction", "Travel and Hospitality"
+];
 
 const Portfolio = () => {
   const [selectedIndustry, setSelectedIndustry] = useState("All");
+  const navigate = useNavigate();
 
   const filteredProjects =
     selectedIndustry === "All"
@@ -74,7 +80,10 @@ const Portfolio = () => {
           <p className="text-lg md:text-xl mb-10">
             We offer full-cycle IT consulting and software engineering to help BFSI companies transform operations and unlock growth opportunities.
           </p>
-          <button className="bg-red-600 hover:bg-red-700 transition px-6 py-3 text-lg font-semibold rounded">
+          <button
+            onClick={() => navigate("/contact")}
+            className="bg-red-600 hover:bg-red-700 transition px-6 py-3 text-lg font-semibold rounded"
+          >
             Get a free consultation
           </button>
         </div>
@@ -118,19 +127,20 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-lg font-semibold mb-4">{project.title}</h3>
                 <a
-  href={project.url}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition text-sm"
->
-  View site →
-</a>
-
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition text-sm"
+                >
+                  View site →
+                </a>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <Consultation />
     </div>
   );
 };
