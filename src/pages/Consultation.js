@@ -125,7 +125,7 @@ const Consultation = () => {
           <h3 className="text-lg font-semibold text-gray-900 mt-6">
             Join our team
           </h3>
-          <p className="text-blue-600 cursor-pointer mt-2">📂 Upload your CV</p>
+          <p className="text-blue-600 cursor-pointer mt-2">Email: team@intrahelp.space</p>
         </div>
       </div>
     </div>

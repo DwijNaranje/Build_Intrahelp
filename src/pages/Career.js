@@ -34,51 +34,51 @@ const Pricing = () => {
   <div className="space-y-6 max-w-4xl mx-auto">
     {[
       {
-        title: "Senior iOS Developer",
+        title: "Software Developer",
         posted: "today",
         workplace: "Remote",
-        location: "Poland",
-        company: "Netguru",
+        location: "India",
+        company: "Intrahelp",
         type: "Full time",
       },
       {
-        title: "NGP Senior PHP Developer",
+        title: "UI-UX Designer",
         posted: "1 day ago",
         workplace: "Remote",
-        location: "Poland",
-        company: "NTG Freelancer",
-        type: "Contract",
+        location: "India",
+        company: "Intrahelp",
+        type: "Full time",
       },
       {
-        title: "NGP Senior Growth Hacker",
+        title: "Backend Developer",
         posted: "1 day ago",
         workplace: "Remote",
-        location: "Poland",
-        company: "NTG Freelancer",
-        type: "Contract",
+        location: "India",
+        company: "Intrahelp",
+        type: "Full time",
       },
       {
-        title: "AI Engineer",
+        title: "Data Engineer",
         posted: "7 days ago",
         workplace: "Remote",
-        location: "Poznań, Greater Poland Voivodeship",
-        company: "Netguru",
+        location: "India",
+        company: "Intrahelp",
         type: "Full time",
       },
       {
-        title: "IT Specialist",
+        title: "Fullstack Developer",
         posted: "10 days ago",
         workplace: "Hybrid",
-        location: "Poznań, Greater Poland Voivodeship",
-        company: "Netguru",
+        location: "India",
+        company: "Intrahelp",
         type: "Full time",
       },
       {
-        title: "NGP Fullstack Developer with Ember and Ruby on Rails",
+        title: "Human Resource",
         posted: "10 days ago",
         workplace: "Remote",
-        location: "Poland",
-        company: "NTG Freelancer",
+        location: "India",
+        company: "Intrahelp",
         type: "Full time",
       },
     ].map((job, idx) => (
@@ -98,9 +98,13 @@ const Pricing = () => {
           <span className="block">{job.company}</span>
           <span className="block">{job.type}</span>
         </div>
+        
       </div>
+
+      
     ))}
   </div>
+  <h5 className="text-xl text-center mt-7 mb-5">Email your resume at <b>team@intrahelp.space</b></h5>
 </div>
 
 

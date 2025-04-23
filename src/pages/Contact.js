@@ -130,15 +130,15 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border rounded-lg p-6 shadow-md bg-white">
           <div className="space-y-3">
             <h3 className="font-semibold text-lg text-gray-800">Our Contacts</h3>
-            <p className="flex items-center text-gray-700 gap-2"><Phone size={16} /> +1 214 306 6837</p>
-            <p className="flex items-center text-gray-700 gap-2"><Mail size={16} /> contact@intrahelp.com</p>
+            <p className="flex items-center text-gray-700 gap-2"><Phone size={16} /> +91 98813 69017</p>
+            <p className="flex items-center text-gray-700 gap-2"><Mail size={16} /> contact@intrahelp.space</p>
             <p className="text-blue-600 hover:underline cursor-pointer">WhatsApp</p>
             <p className="text-blue-600 hover:underline cursor-pointer">Live chat</p>
           </div>
           
           <div className="space-y-3">
             <h3 className="font-semibold text-lg text-gray-800">Join Our Team</h3>
-            <p className="text-blue-600 hover:underline cursor-pointer">Upload your CV</p>
+            <p className="text-blue-600 hover:underline cursor-pointer">Email:- team@intrahelp.space</p>
           </div>
         </div>
         <div className="mt-10 border rounded-lg p-6 shadow-md bg-white">
