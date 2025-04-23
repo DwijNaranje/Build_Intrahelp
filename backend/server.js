@@ -30,7 +30,7 @@ app.post("/contact", async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Something went wrong" });
   }
-  res.send("inside contact");
+  res.send("Contact endpoint is live and ready for POST.");
 });
 
 // Add this new route
