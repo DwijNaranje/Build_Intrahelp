@@ -382,57 +382,7 @@ const projectData = [
     image: py5,
     industry: "Payments",
     url: "https://example.com/py1",
-  },
-  
-  
-  {
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
-    image: project1,
-    industry: "Healthcare",
-    url: "https://example.com/project1",
-  },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
-    image: project1,
-    industry: "Healthcare",
-    url: "https://example.com/project1",
-  },
-  
-  
-  {
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
-    image: project1,
-    industry: "Healthcare",
-    url: "https://example.com/project1",
-  },{
-    title: "IoT-Based Physiotherapy Platform Driving 70% Reduction in Pain",
-    image: project2,
-    industry: "Healthcare",
-    url: "https://example.com/project2",
-  },
-  {
-    title: "Underwriting Automation Software for a Global Aviation Insurer with $30B in Assets",
-    image: project3,
-    industry: "Banking & Finance",
-    url: "https://example.com/project3",
-  },
-  {
-    title: "10-Year Evolution of Life Sciences Software Products Used by GSK and AstraZeneca",
-    image: project4,
-    industry: "Pharmaceuticals",
-    url: "https://example.com/project4",
-  },
-  {
-    title: "Custom Software for End-to-End Loan Management Automation",
-    image: project5,
-    industry: "Banking & Finance",
-    url: "https://example.com/project5",
-  },
-  {
-    title: "Azure-Based Investment Management Software for a Full-Service Family Office",
-    image: project6,
-    industry: "Banking & Finance",
-    url: "https://example.com/project6",
-  },
+  }
 ];
 
 const industries = [
