@@ -1,6 +1,31 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import heroBg from "../assets/image2.png";
+import h1 from "../assets/hotel_p1.png";
+import h2 from "../assets/hotel_p2.png";
+import h3 from "../assets/hotel_p3.png";
+import h4 from "../assets/hotel_p4.png";
+import h5 from "../assets/hotel_p5.png";
+import hc1 from "../assets/health1.png";
+import hc2 from "../assets/health2.png";
+import hc3 from "../assets/health3.png";
+import hc4 from "../assets/health4.png";
+import hc5 from "../assets/health5.png";
+import f1 from "../assets/finance1.png";
+import f2 from "../assets/finance2.png";
+import f3 from "../assets/finance3.png";
+import f4 from "../assets/finance4.png";
+import f5 from "../assets/finance5.png";
+import ft1 from "../assets/Fintech1.png";
+import ft2 from "../assets/Fintech2.png";
+import ft3 from "../assets/Fintech3.png";
+import ft4 from "../assets/Fintech4.png";
+import ft5 from "../assets/Fintech5.png";
+import py1 from "../assets/payment1.png";
+import py2 from "../assets/payment2.png";
+import py3 from "../assets/payment3.png";
+import py4 from "../assets/payment4.png";
+import py5 from "../assets/payment5.png";
 import project1 from "../assets/image2.png";
 import project2 from "../assets/image2.png";
 import project3 from "../assets/image2.png";
@@ -12,6 +37,237 @@ import Consultation from "./Consultation";
 // Updated project data with URLs
 const projectData = [
   {
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },
+  
+  
+  
+  
+  
+  {
+    title: "SUAY RESORTS SOFTWARE",
+    image: h1,
+    industry: "Hotels",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "HOTEL-21 WEBSITE",
+    image: h2,
+    industry: "Hotels",
+    url: "https://hotel21.vercel.app/",
+  },{
+    title: "GOLOBE WEBSITE",
+    image: h3,
+    industry: "Hotels",
+    url: "https://golob-travel-agency.vercel.app/",
+  },{
+    title: "ORBITZ WEBSITE AND SOFTWARE",
+    image: h4,
+    industry: "Hotels",
+    url: "https://orbitz.netlify.app/",
+  },{
+    title: "BANKHOTEL WEBSITE WITH SOFTWARE INTEGRATION",
+    image: h5,
+    industry: "Hotels",
+    url: "https://bank-hotel.netlify.app/",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: hc1,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: hc2,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: hc3,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: hc4,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: hc5,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: f1,
+    industry: "Banking & Finance",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: f2,
+    industry: "Banking & Finance",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: f3,
+    industry: "Banking & Finance",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: f4,
+    industry: "Banking & Finance",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: f5,
+    industry: "Banking & Finance",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: ft1,
+    industry: "FinTech",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: ft2,
+    industry: "FinTech",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: ft3,
+    industry: "FinTech",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: ft4,
+    industry: "FinTech",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: ft5,
+    industry: "FinTech",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: py1,
+    industry: "Payments",
+    url: "https://example.com/py1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: py2,
+    industry: "Payments",
+    url: "https://example.com/py1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: py3,
+    industry: "Payments",
+    url: "https://example.com/py1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: py4,
+    industry: "Payments",
+    url: "https://example.com/py1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: py5,
+    industry: "Payments",
+    url: "https://example.com/py1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: project1,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: project1,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
     title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
     image: project1,
     industry: "Healthcare",
@@ -26,7 +282,7 @@ const projectData = [
   {
     title: "Underwriting Automation Software for a Global Aviation Insurer with $30B in Assets",
     image: project3,
-    industry: "Finance",
+    industry: "Banking & Finance",
     url: "https://example.com/project3",
   },
   {
@@ -38,21 +294,21 @@ const projectData = [
   {
     title: "Custom Software for End-to-End Loan Management Automation",
     image: project5,
-    industry: "Finance",
+    industry: "Banking & Finance",
     url: "https://example.com/project5",
   },
   {
     title: "Azure-Based Investment Management Software for a Full-Service Family Office",
     image: project6,
-    industry: "Finance",
+    industry: "Banking & Finance",
     url: "https://example.com/project6",
   },
 ];
 
 const industries = [
-  "All", "Healthcare", "Finance", "Pharmaceuticals", "Banking", "Insurance", "Lending", "Investment",
-  "FinTech", "Payments", "Retail", "Manufacturing", "Transportation and Logistics", "Oil and Gas",
-  "Professional Services", "Telecommunications", "Real Estate", "Construction", "Travel and Hospitality"
+  "All", "Healthcare", "Hotels", "Real Estate", "Banking & Finance", "Insurance",
+  "FinTech", "Payments", "Retail Shops", "Manufacturing", "Transportation and Logistics",
+   "Construction", "Travel and Hospitality"
 ];
 
 const Portfolio = () => {
