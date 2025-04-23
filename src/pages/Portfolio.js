@@ -67,12 +67,6 @@ import manu2 from "../assets/manufacturing2.png";
 import manu3 from "../assets/manufacturing3.png";
 import manu4 from "../assets/manufacturing4.png";
 
-import project1 from "../assets/image2.png";
-import project2 from "../assets/image2.png";
-import project3 from "../assets/image2.png";
-import project4 from "../assets/image2.png";
-import project5 from "../assets/image2.png";
-import project6 from "../assets/image2.png";
 import Consultation from "./Consultation";
 
 // Updated project data with URLs
