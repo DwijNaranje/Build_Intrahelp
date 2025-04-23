@@ -72,75 +72,75 @@ import Consultation from "./Consultation";
 // Updated project data with URLs
 const projectData = [
   {
-    title: "SUAY RESORTS SOFTWARE",
+    title: "RentUP software and website for RealEstate Business",
     image: re1,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://funny-daffodil-350bc9.netlify.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Homyz software and website for Property Booking",
     image: re2,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://full-stack-real-estate-youtube-sooty.vercel.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Estatery Complete software for property",
     image: re3,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://estaterry.netlify.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Realtor Website for Property client Managemant",
     image: re4,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://realtor-opal.vercel.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "91acres Complete solution for RealEstate",
     image: re5,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://91acres.netlify.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Rently Software for Client Interaction and Property Booking",
     image: re6,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://rehabmahmoud20.github.io/Rently/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Macho RealEstate Software",
     image: re7,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://macho-realtor.netlify.app/home",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Avilatek Simple Solution for RealEstate Property Booking",
     image: re8,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://real-estate-web.vercel.app/home",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "BuildEstate Software and Website",
     image: re9,
     industry: "Real Estate",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://buildestate.vercel.app/",
   },
 
 
   {
-    title: "SUAY RESORTS SOFTWARE",
+    title: "SUAY Resort Software",
     image: h1,
     industry: "Hotels",
     url: "https://suay-resort.netlify.app/",
   },{
-    title: "HOTEL-21 WEBSITE",
+    title: "HOTEL-21 Website and Software",
     image: h2,
     industry: "Hotels",
     url: "https://hotel21.vercel.app/",
   },{
-    title: "GOLOBE WEBSITE",
+    title: "GOLOBE Website",
     image: h3,
     industry: "Hotels",
     url: "https://golob-travel-agency.vercel.app/",
   },{
-    title: "ORBITZ WEBSITE AND SOFTWARE",
+    title: "ORBITZ Website and Software",
     image: h4,
     industry: "Hotels",
     url: "https://orbitz.netlify.app/",
   },{
-    title: "BANKHOTEL WEBSITE WITH SOFTWARE INTEGRATION",
+    title: "BANKHOTEL Website with Software Integration",
     image: h5,
     industry: "Hotels",
     url: "https://bank-hotel.netlify.app/",
@@ -148,241 +148,240 @@ const projectData = [
   
   
   {
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Flowmates Constructions Website",
     image: con1,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://construction-website-lemon.vercel.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "V2RConstructions Software and Website",
     image: con2,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://geekblower.github.io/v2rconstructions/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "TheeBestConstructors website ",
     image: con3,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://mfidiv.github.io/Thee-Best-Group-Project/#home",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "LTPS Infra Constructors Software",
     image: con4,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://ltps-infra.vercel.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "R.J.Murphy Constructors Website and Software",
     image: con5,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://www.rjmurphyconstruction.com//",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Electra.QA website",
     image: con6,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://www.electra.qa/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Backdoor Constructions Website",
     image: con7,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://backdoor.netlify.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Construction-Solutions website",
     image: con8,
     industry: "Construction",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://nausalexus.github.io/construction-solutions/",
   },
   
   
   
   {
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Grocery Store Website and Software",
     image: rstr1,
     industry: "Retail Shops",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://nargizkani.github.io/grocery-store/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "New Fashion Store for lattest collections",
     image: rstr2,
     industry: "Retail Shops",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://ecommerce-shop-react-app.vercel.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Hikstore for Hiking Products",
     image: rstr3,
     industry: "Retail Shops",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://hikstore.pages.dev/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Nikey Shoe Store for Dropshipping",
     image: rstr4,
     industry: "Retail Shops",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://nike-shoe-store.netlify.app/",
   },
   
   
   
   {
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Caresure Insurance Company Sofware",
     image: inc1,
     industry: "Insurance",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://caresure-health-insurance.vercel.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "LifeInsureEase Life Insurance Company Website",
     image: inc2,
     industry: "Insurance",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://insurance-website-six.vercel.app/",
   },
   
   
   
   {
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Trackway Transportation and Logistics Software",
     image: tl1,
     industry: "Transportation and Logistics",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://trackway-frontend-gamma.vercel.app/home",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Hirevgo Transportation and Logistics Website",
     image: tl2,
     industry: "Transportation and Logistics",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://www.hirevgo.com/",
   },
   
   
   
   {
-    title: "SUAY RESORTS SOFTWARE",
+    title: "CMK Cables Website",
     image: manu1,
     industry: "Manufacturing",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://cmk-cable-website.vercel.app/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Krysztal Website and Software",
     image: manu2,
     industry: "Manufacturing",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://treodaio.github.io/Krysztal_Website/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Eastlongsz Website",
     image: manu3,
     industry: "Manufacturing",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://eastlongsz.com/",
   },{
-    title: "SUAY RESORTS SOFTWARE",
+    title: "Abacus Manufacturing Company website",
     image: manu4,
     industry: "Manufacturing",
-    url: "https://suay-resort.netlify.app/",
+    url: "https://abacus-parts.web.app/",
   },
   
   
   {
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Medisure Heathcare Company",
     image: hc1,
     industry: "Healthcare",
-    url: "https://example.com/project1",
+    url: "https://medisure-healthcare.web.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "NactoCare Heathcare website and software",
     image: hc2,
     industry: "Healthcare",
-    url: "https://example.com/project1",
+    url: "https://nacto-care.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "TraFalgar Website and Software",
     image: hc3,
     industry: "Healthcare",
-    url: "https://example.com/project1",
+    url: "https://healthcare-design-to-code-nextjs.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "HLcare Software",
     image: hc4,
     industry: "Healthcare",
-    url: "https://example.com/project1",
+    url: "https://health-care-tau.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Online Heathcare Hospital Service Consultation",
     image: hc5,
     industry: "Healthcare",
-    url: "https://example.com/project1",
+    url: "https://healthcaress.netlify.app/",
   },
   
   
   
   {
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Pure Finance Software and Website",
     image: f1,
     industry: "Banking & Finance",
-    url: "https://example.com/project1",
+    url: "https://pure.finance/en",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Eauth Banking and Finance Website",
     image: f2,
     industry: "Banking & Finance",
-    url: "https://example.com/project1",
+    url: "https://eauth.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "SwiftPay Banking and Finance",
     image: f3,
     industry: "Banking & Finance",
-    url: "https://example.com/project1",
+    url: "https://warlike-current-5989-gamma.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "JoinUs Finance Company",
     image: f4,
     industry: "Banking & Finance",
-    url: "https://example.com/project1",
+    url: "https://joinus.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "AutoFinance Banking And Finance firm",
     image: f5,
     industry: "Banking & Finance",
-    url: "https://example.com/project1",
+    url: "https://autofinance.vercel.app/",
   },
   
   
   {
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "NUS FinTech Software",
     image: ft1,
     industry: "FinTech",
-    url: "https://example.com/project1",
+    url: "https://fintechsociety.comp.nus.edu.sg/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Fintech Software",
     image: ft2,
     industry: "FinTech",
-    url: "https://example.com/project1",
+    url: "https://landingpage-pr01.netlify.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "FundIX Fintech Company Website and Software",
     image: ft3,
     industry: "FinTech",
-    url: "https://example.com/project1",
+    url: "https://fundix.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Abound FinTech Firm",
     image: ft4,
     industry: "FinTech",
-    url: "https://example.com/project1",
+    url: "https://abound-clone.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "FinTech Calgary Company",
     image: ft5,
     industry: "FinTech",
-    url: "https://example.com/project1",
+    url: "https://website-gilt-five-70.vercel.app/",
   },
   
   
   {
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Bitcoinqr Payments Website",
     image: py1,
     industry: "Payments",
-    url: "https://example.com/py1",
+    url: "https://bitcoinqr.dev/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Restaurent Payment Managemant",
     image: py2,
     industry: "Payments",
-    url: "https://example.com/py1",
+    url: "https://restaurant-e-commerce-website-omega.vercel.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Dropshipping Payment Managemant",
     image: py3,
     industry: "Payments",
-    url: "https://example.com/py1",
+    url: "https://competent-engelbart-3915c0.netlify.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "Hospital Payment Gateway",
     image: py4,
     industry: "Payments",
-    url: "https://example.com/py1",
+    url: "https://hm-system.netlify.app/",
   },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    title: "MeshStore Payments",
     image: py5,
     industry: "Payments",
-    url: "https://example.com/py1",
+    url: "https://meshstore.netlify.app/",
   }
 ];
 
 const industries = [
   "All", "Healthcare", "Hotels", "Real Estate", "Banking & Finance", "Insurance",
-  "FinTech", "Payments", "Retail Shops", "Manufacturing", "Transportation and Logistics",
-   "Construction", "Travel and Hospitality"
+  "FinTech", "Payments", "Retail Shops", "Manufacturing", "Transportation and Logistics", "Construction"
 ];
 
 const Portfolio = () => {

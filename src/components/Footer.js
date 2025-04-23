@@ -21,13 +21,13 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             Nagpur, Maharashtra, India
             <br /> +91 98813 69017
-            <br /> ngp@intrahelp.com
+            <br /> contact@intrahelp.com
           </p>
           <h3 className="font-bold text-lg mt-4">Maharashtra, India</h3>
           <p className="text-gray-400 text-sm">
           Pune, Maharashtra, India
-            <br /> +91 94035 47883
-            <br /> pune@intrahelp.com
+            <br /> +91 9881369017
+            <br /> contact@intrahelp.com
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             Hyderabad, Maharashtra, India
             <br /> +91 98813 69017
-            <br /> Hyderabad@intrahelp.com
+            <br /> contact@intrahelp.com
           </p>
           
         </div>

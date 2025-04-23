@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className={`flex justify-end items-center px-6 py-2 text-sm transition-all duration-300 ${isScrolled ? "bg-gray-100 text-black" : "bg-transparent text-white"}`}>
         <div className="flex space-x-4">
           <span className="flex items-center">
-            <Mail size={16} className="mr-2" /> contact@intrahelp.com
+            <Mail size={16} className="mr-2" /> contact@intrahelp.space
           </span>
           <span>📞 +91 98813 69017</span>
         </div>
