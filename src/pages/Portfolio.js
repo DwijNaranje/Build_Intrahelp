@@ -1,31 +1,72 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import heroBg from "../assets/image2.png";
+
 import h1 from "../assets/hotel_p1.png";
 import h2 from "../assets/hotel_p2.png";
 import h3 from "../assets/hotel_p3.png";
 import h4 from "../assets/hotel_p4.png";
 import h5 from "../assets/hotel_p5.png";
+
 import hc1 from "../assets/health1.png";
 import hc2 from "../assets/health2.png";
 import hc3 from "../assets/health3.png";
 import hc4 from "../assets/health4.png";
 import hc5 from "../assets/health5.png";
+
 import f1 from "../assets/finance1.png";
 import f2 from "../assets/finance2.png";
 import f3 from "../assets/finance3.png";
 import f4 from "../assets/finance4.png";
 import f5 from "../assets/finance5.png";
+
 import ft1 from "../assets/Fintech1.png";
 import ft2 from "../assets/Fintech2.png";
 import ft3 from "../assets/Fintech3.png";
 import ft4 from "../assets/Fintech4.png";
 import ft5 from "../assets/Fintech5.png";
+
 import py1 from "../assets/payment1.png";
 import py2 from "../assets/payment2.png";
 import py3 from "../assets/payment3.png";
 import py4 from "../assets/payment4.png";
 import py5 from "../assets/payment5.png";
+
+import re1 from "../assets/RealEstate1.png";
+import re2 from "../assets/RealEstate2.png";
+import re3 from "../assets/RealEstate3.png";
+import re4 from "../assets/RealEstate4.png";
+import re5 from "../assets/RealEstate5.png";
+import re6 from "../assets/RealEstate6.png";
+import re7 from "../assets/RealEstate7.png";
+import re8 from "../assets/RealEstate8.png";
+import re9 from "../assets/RealEstate9.png";
+
+import con1 from "../assets/construction1.png";
+import con2 from "../assets/construction2.png";
+import con3 from "../assets/construction3.png";
+import con4 from "../assets/construction4.png";
+import con5 from "../assets/construction5.png";
+import con6 from "../assets/construction6.png";
+import con7 from "../assets/construction7.png";
+import con8 from "../assets/construction8.png";
+
+import rstr1 from "../assets/Store1.png";
+import rstr2 from "../assets/Store2.png";
+import rstr3 from "../assets/Store3.png";
+import rstr4 from "../assets/Store4.png";
+
+import inc1 from "../assets/insurance1.png";
+import inc2 from "../assets/insurance2.png";
+
+import tl1 from "../assets/T&L1.png";
+import tl2 from "../assets/T&L2.png";
+
+import manu1 from "../assets/manufacturing1.png";
+import manu2 from "../assets/manufacturing2.png";
+import manu3 from "../assets/manufacturing3.png";
+import manu4 from "../assets/manufacturing4.png";
+
 import project1 from "../assets/image2.png";
 import project2 from "../assets/image2.png";
 import project3 from "../assets/image2.png";
@@ -38,100 +79,52 @@ import Consultation from "./Consultation";
 const projectData = [
   {
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re1,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re2,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re3,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re4,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re5,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re6,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re7,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re8,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },{
     title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
-    url: "https://suay-resort.netlify.app/",
-  },{
-    title: "SUAY RESORTS SOFTWARE",
-    image: h1,
-    industry: "Hotels",
+    image: re9,
+    industry: "Real Estate",
     url: "https://suay-resort.netlify.app/",
   },
-  
-  
-  
-  
-  
+
+
   {
     title: "SUAY RESORTS SOFTWARE",
     image: h1,
@@ -157,7 +150,129 @@ const projectData = [
     image: h5,
     industry: "Hotels",
     url: "https://bank-hotel.netlify.app/",
+  },
+  
+  
+  {
+    title: "SUAY RESORTS SOFTWARE",
+    image: con1,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
   },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: con2,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: con3,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: con4,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: con5,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: con6,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: con7,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: con8,
+    industry: "Construction",
+    url: "https://suay-resort.netlify.app/",
+  },
+  
+  
+  
+  {
+    title: "SUAY RESORTS SOFTWARE",
+    image: rstr1,
+    industry: "Retail Shops",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: rstr2,
+    industry: "Retail Shops",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: rstr3,
+    industry: "Retail Shops",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: rstr4,
+    industry: "Retail Shops",
+    url: "https://suay-resort.netlify.app/",
+  },
+  
+  
+  
+  {
+    title: "SUAY RESORTS SOFTWARE",
+    image: inc1,
+    industry: "Insurance",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: inc2,
+    industry: "Insurance",
+    url: "https://suay-resort.netlify.app/",
+  },
+  
+  
+  
+  {
+    title: "SUAY RESORTS SOFTWARE",
+    image: tl1,
+    industry: "Transportation and Logistics",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: tl2,
+    industry: "Transportation and Logistics",
+    url: "https://suay-resort.netlify.app/",
+  },
+  
+  
+  
+  {
+    title: "SUAY RESORTS SOFTWARE",
+    image: manu1,
+    industry: "Manufacturing",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: manu2,
+    industry: "Manufacturing",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: manu3,
+    industry: "Manufacturing",
+    url: "https://suay-resort.netlify.app/",
+  },{
+    title: "SUAY RESORTS SOFTWARE",
+    image: manu4,
+    industry: "Manufacturing",
+    url: "https://suay-resort.netlify.app/",
+  },
+  
+  
+  {
     title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
     image: hc1,
     industry: "Healthcare",
@@ -182,7 +297,11 @@ const projectData = [
     image: hc5,
     industry: "Healthcare",
     url: "https://example.com/project1",
-  },{
+  },
+  
+  
+  
+  {
     title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
     image: f1,
     industry: "Banking & Finance",
@@ -207,7 +326,10 @@ const projectData = [
     image: f5,
     industry: "Banking & Finance",
     url: "https://example.com/project1",
-  },{
+  },
+  
+  
+  {
     title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
     image: ft1,
     industry: "FinTech",
@@ -232,7 +354,10 @@ const projectData = [
     image: ft5,
     industry: "FinTech",
     url: "https://example.com/project1",
-  },{
+  },
+  
+  
+  {
     title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
     image: py1,
     industry: "Payments",
@@ -257,12 +382,10 @@ const projectData = [
     image: py5,
     industry: "Payments",
     url: "https://example.com/py1",
-  },{
-    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
-    image: project1,
-    industry: "Healthcare",
-    url: "https://example.com/project1",
-  },{
+  },
+  
+  
+  {
     title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
     image: project1,
     industry: "Healthcare",
@@ -273,7 +396,14 @@ const projectData = [
     industry: "Healthcare",
     url: "https://example.com/project1",
   },
+  
+  
   {
+    title: "GAMP4-Compliant Software to Automate Cancer & TPN Drugs Manufacturing",
+    image: project1,
+    industry: "Healthcare",
+    url: "https://example.com/project1",
+  },{
     title: "IoT-Based Physiotherapy Platform Driving 70% Reduction in Pain",
     image: project2,
     industry: "Healthcare",
