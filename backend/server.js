@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
     res.send("🚀 Server is running...");
   });
 
-app.post("/api/contact", async (req, res) => {
+app.post("/contact", async (req, res) => {
   try {
     const form = new ContactForm(req.body);
     await form.save();
@@ -30,10 +30,11 @@ app.post("/api/contact", async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Something went wrong" });
   }
+  res.send("inside contact");
 });
 
 // Add this new route
-app.post("/api/consultation", async (req, res) => {
+app.post("/consultation", async (req, res) => {
     try {
       const form = new ConsultationForm(req.body);
       await form.save();
@@ -41,6 +42,7 @@ app.post("/api/consultation", async (req, res) => {
     } catch (error) {
       res.status(500).json({ error: "Something went wrong" });
     }
+    res.send("inside consultation");
   });
 
 const PORT = process.env.PORT || 5000;

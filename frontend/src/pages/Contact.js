@@ -25,7 +25,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://build-intrahelp-2.onrender.com/api/contact", formData);
+      await axios.post(`${process.env.Backend_URL}/contact`, formData);
       setSubmitted(true); // ✅ Set to true after successful submit
     } catch (err) {
       alert("Something went wrong. Please try again.");
