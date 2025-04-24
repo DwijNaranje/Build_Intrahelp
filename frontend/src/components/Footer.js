@@ -21,13 +21,13 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             Nagpur, Maharashtra, India
             <br /> +91 98813 69017
-            <br /> contact@intrahelp.com
+            <br /> contact@intrahelp.space
           </p>
           <h3 className="font-bold text-lg mt-4">Maharashtra, India</h3>
           <p className="text-gray-400 text-sm">
           Pune, Maharashtra, India
             <br /> +91 9881369017
-            <br /> contact@intrahelp.com
+            <br /> contact@intrahelp.space
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             Hyderabad, Maharashtra, India
             <br /> +91 98813 69017
-            <br /> contact@intrahelp.com
+            <br /> contact@intrahelp.space
           </p>
           
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-lg">Quick Links</h3>
           <ul className="mt-4 space-y-2">
-            {[ "About", "Services", "Industries", "Portfolio", "Pricing", "Career"].map((link) => (
+            {[ "About", "Services", "Industries", "Portfolio", "Pricing", "Career", "Contact"].map((link) => (
               <li key={link}>
                 <Link to={`/${link.toLowerCase().replace(/\s+/g, "-")}`} className="text-gray-400 hover:text-white transition duration-300">
                   {link}

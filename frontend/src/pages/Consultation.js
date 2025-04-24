@@ -115,10 +115,9 @@ const Consultation = () => {
             Get in touch instantly
           </h3>
           <div className="mt-2 space-y-2 text-blue-600">
-            <p className="cursor-pointer">📞 Call us</p>
-            <p className="cursor-pointer">📧 Email us</p>
-            <p className="cursor-pointer">💬 WhatsApp</p>
-            <p className="cursor-pointer">📡 Live chat</p>
+            <p className="cursor-pointer">📞 +91 98813 69017</p>
+            <p className="cursor-pointer">📧 contact@intrahelp.space</p>
+            <p href="https://wa.me/9881369017" className="cursor-pointer">💬 WhatsApp</p>
           </div>
 
 
