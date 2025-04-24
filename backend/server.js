@@ -19,10 +19,10 @@ mongoose.connect(process.env.MONGO_URI, {
 
   // Root route
 app.get("/", (req, res) => {
-    res.send("🚀 Server is running...");
+    res.send("🚀 Server is running...#");
   });
 
-app.post("/contact", async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   try {
     const form = new ContactForm(req.body);
     await form.save();
@@ -30,11 +30,15 @@ app.post("/contact", async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Something went wrong" });
   }
+  res.send("Contact endpoint ");
+});
+
+app.get("/api/contact", (req, res) => {
   res.send("Contact endpoint is live and ready for POST.");
 });
 
 // Add this new route
-app.post("/consultation", async (req, res) => {
+app.post("/api/consultation", async (req, res) => {
     try {
       const form = new ConsultationForm(req.body);
       await form.save();
