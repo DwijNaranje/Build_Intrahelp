@@ -136,7 +136,7 @@ const Contact = () => {
   href="https://wa.me/9881369017"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-blue-600 hover:underline cursor-pointer"
+  className="text-blue-600 hover:underline cursor-pointerflex items-center gap-2"
 >
   WhatsApp
 </a>

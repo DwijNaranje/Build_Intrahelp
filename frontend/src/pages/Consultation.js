@@ -121,9 +121,9 @@ const Consultation = () => {
   href="https://wa.me/9881369017"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-blue-600 hover:underline cursor-pointer"
+  className="text-blue-600 mt-2 space-y-2 hover:underline cursor-pointer"
 >
-  WhatsApp
+💬 WhatsApp
 </a>
           </div>
 
