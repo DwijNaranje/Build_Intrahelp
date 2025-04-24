@@ -132,7 +132,14 @@ const Contact = () => {
             <h3 className="font-semibold text-lg text-gray-800">Our Contacts</h3>
             <p className="flex items-center text-gray-700 gap-2"><Phone size={16} /> +91 98813 69017</p>
             <p className="flex items-center text-gray-700 gap-2"><Mail size={16} /> contact@intrahelp.space</p>
-            <p href="https://wa.me/9881369017" className="text-blue-600 hover:underline cursor-pointer">WhatsApp</p>
+            <a
+  href="https://wa.me/9881369017"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:underline cursor-pointer"
+>
+  WhatsApp
+</a>
           </div>
           
           <div className="space-y-3">

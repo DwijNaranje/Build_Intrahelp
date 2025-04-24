@@ -117,7 +117,14 @@ const Consultation = () => {
           <div className="mt-2 space-y-2 text-blue-600">
             <p className="cursor-pointer">📞 +91 98813 69017</p>
             <p className="cursor-pointer">📧 contact@intrahelp.space</p>
-            <p href="https://wa.me/9881369017" className="cursor-pointer">💬 WhatsApp</p>
+            <a
+  href="https://wa.me/9881369017"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:underline cursor-pointer"
+>
+  WhatsApp
+</a>
           </div>
 
 
