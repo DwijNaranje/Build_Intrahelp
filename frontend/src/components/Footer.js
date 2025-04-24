@@ -11,7 +11,7 @@ const Footer = () => {
           <img src={logo} alt="Intrahelp Logo" className="h-[150px] md:h-[180px]" />
           <p className="text-gray-400">Our profile at:</p>
           <div className="mt-4 space-y-2">
-            <a href="#" className="block text-lg font-semibold">LinkedIn</a>
+            <a className="block text-lg font-semibold">LinkedIn</a>
           </div>
         </div>
 
