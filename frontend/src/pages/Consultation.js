@@ -20,7 +20,7 @@ const Consultation = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://localhost:5000/api/consultation", formData);
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/consultation`, formData);
       setSubmitted(true);
     } catch (err) {
       alert("Something went wrong. Please try again.");
